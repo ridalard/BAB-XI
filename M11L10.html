@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.mis.js"></script>	
+	<script>
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("apanel").slideToggle("slow");
+		});
+	});
+</script> 
+<style>
+#panel, #flip{
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eeCC;
+	border: solid 1px #c3c3c3;
+}
+	#panel1 {
+		padding: 50px;
+		display: none;
+	}
+</style>
+</head>
+<body>
+
+	<div id="flip">Click to slide panel down or up</div>
+	<div id="panel">Hello Word!</div>
+</body>
+</html>
